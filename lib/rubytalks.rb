@@ -35,6 +35,15 @@ Lotus::Model.configure do
   # Alternatively, you can use a block syntax like the following:
   #
   mapping do
+    collection :talks do
+      entity      Talk
+      repository  TalkRepository
+
+      attribute :id,      Integer
+      attribute :title,   String
+      attribute :author,  String
+      attribute :link,    String
+    end
     # collection :users do
     #   entity     User
     #   repository UserRepository

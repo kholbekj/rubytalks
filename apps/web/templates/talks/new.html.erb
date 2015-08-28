@@ -1,0 +1,24 @@
+<h2>Add talk</h2>
+
+<%=
+  form_for :talk, '/talks' do
+    div class: 'input' do
+      label :title
+      text_field :title
+    end
+
+    div class: 'input' do
+      label :author
+      text_field :author
+    end
+
+    div class: 'input' do
+      label :link
+      text_field :link
+    end
+
+    div clas: 'controls' do
+      submit 'Create talk'
+    end
+  end
+%>
