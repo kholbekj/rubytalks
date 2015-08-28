@@ -6,6 +6,9 @@ describe Web::Controllers::Talks::Create do
   after do
     TalkRepository.clear
   end
+  before do
+    TalkRepository.clear
+  end
 
   describe 'with valid params' do
     let(:params) { Hash[talk: { title: 'How to type', author: 'John Wayne', link: 'www.google.com' }] }
