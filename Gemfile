@@ -2,12 +2,10 @@ source 'https://rubygems.org'
 
 gem 'bundler'
 gem 'rake'
-
 gem 'lotusrb',       '0.4.1'
 gem 'lotus-model',   '~> 0.4'
-
-
 gem 'pg'
+gem 'pry'
 
 group :test do
   gem 'minitest'
