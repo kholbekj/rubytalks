@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/lotus/assets.git
+  revision: 11e51e3bd1b72044922d0dc9cd25cef2768e3bea
+  specs:
+    lotus-assets (0.1.0)
+      lotus-utils (~> 0.5)
+      tilt (~> 2.0, >= 2.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -54,6 +62,8 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
+    sass (3.4.14)
+    scss (1.0.2)
     sequel (4.25.0)
     shotgun (0.9.1)
       rack (>= 1.0)
@@ -71,9 +81,12 @@ PLATFORMS
 DEPENDENCIES
   bundler
   capybara
+  lotus-assets!
   lotus-model (~> 0.4)
   lotusrb (= 0.4.1)
   minitest
   pg
   pry
   rake
+  sass
+  scss

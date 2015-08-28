@@ -2,9 +2,11 @@
 <html>
   <head>
     <title>RubyTalks</title>
+    <%= javascript 'javascripts/bootstrap.min' %>
+    <%= stylesheet 'stylesheets/bootstrap.min' %>
   </head>
   <body>
-    <h1>RubyTalks</h1>
+    <nav class="navbar navbar-inverse navbar-fixed-top"><a href="#" class="navbar-brand">RubyTalks</a></nav>
     <%= yield %>
   </body>
 </html>

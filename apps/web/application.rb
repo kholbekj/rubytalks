@@ -1,4 +1,6 @@
 require 'lotus/helpers'
+require 'lotus/assets'
+require 'lotus/assets/helpers'
 
 module Web
   class Application < Lotus::Application
