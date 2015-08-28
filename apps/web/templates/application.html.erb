@@ -6,7 +6,11 @@
     <%= stylesheet 'stylesheets/bootstrap.min' %>
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top"><a href="#" class="navbar-brand">RubyTalks</a></nav>
-    <%= yield %>
+    <nav class="navbar navbar-inverse navbar-top">
+      <a href="#" class="navbar-brand">RubyTalks</a>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
